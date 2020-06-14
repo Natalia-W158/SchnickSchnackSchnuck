@@ -8,16 +8,20 @@
 </head>
 <body>
     <div id="game">
-    <div id="rounds">
+        <div id="display">
+            <p>Spielstand Spieler:</p>
+            <div id="roundsPlayer">0</div>
+            <p>Spielstand Computer:</p>
+            <div id="roundsComputer">0</div>
+        </div>
+         <div id="rounds">
         <h5>How many rounds?</h5>
-        <input type="checkbox" name="3rounds" id="3rounds">
+        <input type="checkbox" name="rounds" onclick="spielstand()" id="drei">
         <label for="3rounds">3</label>
-        <input type="checkbox" name="5rounds" id="5rounds">
+        <input type="checkbox" name="rounds" onclick="spielstand()" id="fuenf">
         <label for="5rounds">5</label>
-        <input type="checkbox" name="7rounds" id="7rounds">
+        <input type="checkbox" name="rounds" onclick="spielstand()" id="sieben">
         <label for="7rounds">7</label>
-        <input type="checkbox" name="9rounds" id="9rounds">
-        <label for="9rounds">9</label>
     </div>
     <div id="enemie"></div>
     <div id="start">Let's Play</div>
