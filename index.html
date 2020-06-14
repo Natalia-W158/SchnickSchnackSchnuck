@@ -14,8 +14,10 @@
             <p>Spielstand Computer:</p>
             <div id="roundsComputer">0</div>
         </div>
-         <div id="rounds">
+        <button id="clearAll" onclick="clearAll()">Restart</button>
+    <div id="rounds">
         <h5>How many rounds?</h5>
+        
         <input type="checkbox" name="rounds" onclick="spielstand()" id="drei">
         <label for="3rounds">3</label>
         <input type="checkbox" name="rounds" onclick="spielstand()" id="fuenf">
@@ -23,16 +25,14 @@
         <input type="checkbox" name="rounds" onclick="spielstand()" id="sieben">
         <label for="7rounds">7</label>
     </div>
-    <div id="enemie"></div>
-    <div id="start">Let's Play</div>
     <div id="weapons">
-        <h5>Make your move</h5>
-        <div id="paper" onclick="playersChoice(2)"><img src="https://img.icons8.com/android/50/000000/hand.png"/></div>
-        <div id="rock" onclick="playersChoice(0)"><img src="https://img.icons8.com/ios-filled/50/000000/rock.png"/></div>
-        <div id="scissors" onclick="playersChoice(1)"><img src="https://img.icons8.com/ios-filled/50/000000/hand-scissors.png"/></div>
+        <h5>Make your move: <br><br>
+        </h5>
+        <div id="result"></div>
+        <div id="paper" onclick="playersChoice(2)">PAPER</div>
+        <div id="rock" onclick="playersChoice(0)">ROCK</div>
+        <div id="scissors" onclick="playersChoice(1)">SCISSORS</div>
     </div>
-    <div id="result"></div>
-    <button id="clearAll" onclick="clearAll()">Restart</button>
     </div>
     <script src="main.js"></script>
 </body>

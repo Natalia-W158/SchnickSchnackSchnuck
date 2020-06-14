@@ -1,69 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+
 }
+
 
 #game{
-    display: grid;
-    box-sizing: border-box;
-    gap: 2em;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas: "spielstandUser rounds spielstandPC"
-                        "drei fuenf sieben"
-                        "makeYourMove play clear"
-                        "schere stein papier";
+    padding: 10px;
+    
+}
+#game > div{
+    padding: 10px;
+    background-color: wheat;
+}
+p{
+    padding: 10px;
+    background-color: palevioletred;
+    animation-name: hovering3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
 }
 
-#roundsPlayer{
-    grid-template-areas: spielstandUser;
-}
 
-#roundsComputer{
-    grid-template-areas: spielstandPC;
-}
-
-#rounds{
-    grid-template-areas: rounds;
-}
-
-#drei{
-    grid-template-areas: drei;
-}
-
-#fuenf{
-    grid-template-areas: fuenf;
-}
-
-#sieben{
-    grid-template-areas: sieben;
-}
-
-#weapons{
-    grid-template-areas: makeYourMove;
+#weapons > div{
+    display: inline-flex;
+    border: 2px solid black;
 }
 
 #start{
-    grid-template-areas: play;
+    margin: 25px;
+    display: flex;
+    border: 2px solid yellowgreen;
+    display: inline-flex;
+}
+#roundsPlayer{
+    display: inline-flex;
 }
 
-#clearAll{
-    grid-template-areas: clear;
+#display{
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+}
+
+
+#display > div{
+    font-size: 55px;
+}
+
+#weapons > div{
+    display: flexbox;
+    padding: 2%;
+    transform: translateX(-50%);
+    width: 20%;
+}
+
+input{
+    background-color: violet;
 }
 
 #scissors{
-    grid-template-areas: schere;
-    background-color: yellow;
-}
-
-#paper{
-    grid-template-areas: papier;
-    background-color: red;
+    background-color: turquoise;
+    animation-name: hovering2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
 }
 
 #rock{
-    grid-template-areas: stein;
-    background-color: blue;
+    background-color: thistle;
+    animation-name: hovering;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
+#paper{
+    background-color: whitesmoke;
+    padding: 3%;
+    animation-name: hovering;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+h5{
+    font-size: 30px;
+    animation-name: hovering;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#result{
+    font-family: 'Homemade Apple', cursive;
+    animation-name: hovering;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+button{
+    height: 5em;
+    background-color: yellowgreen;
+    animation-name: hovering;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes hovering {
+    from {transform:translate(0, 0px);}
+    50% {transform:translate(0, -55px);}
+    to {transform: translate(0, -0px);}
+}
+
+@keyframes hovering2 {
+    from {transform:translate(0, 0px);}
+    50% {transform:rotateZ(90deg);}
+    to {transform: translate(0, -0px);}
+}
+
+@keyframes hovering3 {
+    from {font-size: 25px;}
+    50% {transform:rotateZ(90deg);}
+    to {transform: translate(0, -0px);}
+}
+
 
