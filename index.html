@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Schnick Schnack Schnuck</title>
+</head>
+<body>
+    <div id="game">
+    <div id="rounds">
+        <h5>How many rounds?</h5>
+        <input type="checkbox" name="3rounds" id="3rounds">
+        <label for="3rounds">3</label>
+        <input type="checkbox" name="5rounds" id="5rounds">
+        <label for="5rounds">5</label>
+        <input type="checkbox" name="7rounds" id="7rounds">
+        <label for="7rounds">7</label>
+        <input type="checkbox" name="9rounds" id="9rounds">
+        <label for="9rounds">9</label>
+    </div>
+    <div id="enemie"></div>
+    <div id="start">Let's Play</div>
+    <div id="weapons">
+        <h5>Make your move</h5>
+        <div id="paper" onclick="playersChoice(2)"><img src="https://img.icons8.com/android/50/000000/hand.png"/></div>
+        <div id="rock" onclick="playersChoice(0)"><img src="https://img.icons8.com/ios-filled/50/000000/rock.png"/></div>
+        <div id="scissors" onclick="playersChoice(1)"><img src="https://img.icons8.com/ios-filled/50/000000/hand-scissors.png"/></div>
+    </div>
+    <div id="result"></div>
+    <button id="clearAll" onclick="clearAll()">Restart</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

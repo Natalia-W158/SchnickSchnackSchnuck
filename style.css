@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#game{
+    display: grid;
+}
+
+#game > div {
+    margin: auto;
+}
+
+button{
+    width: 10%;
+    margin: auto;
+}
+
+#weapons > div{
+    display: inline-flex;
+}
